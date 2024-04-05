@@ -1,10 +1,6 @@
 const monkeyCount = (n) => {
-
-  let newArray = []
-  for(let i = 1; i <= n ; i++){
-    newArray.push(i)
-  }
-   return newArray
+  return Array.from({length : n}, (_, i) => i+1)
+  
 }
 
 console.log(monkeyCount(5))
